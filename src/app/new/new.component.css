@@ -1,0 +1,52 @@
+#container{
+    align-items: center;
+    display:block;
+    border-radius: 10px;
+   margin-top: 10px;
+    background: black;
+    background: linear-gradient(180deg,rgb(0, 40, 78) 0%,rgb(106, 195, 255));
+    color:white;
+    margin-top: 0;
+
+}
+
+.widget{
+    display:block;
+    margin:0 auto;
+    width:fit-content;
+}
+
+.sun{
+    margin-top: 10px;
+    color:yellow;
+    filter:drop-shadow(1px 1px 10px yellow);
+}
+
+.moon{
+    margin-top: 10px;
+    color:white;
+    filter:drop-shadow(1px 1px 10px white);
+}
+
+.cloudDiv{
+    margin-top: -40px;
+}
+
+.cloud{
+    color:rgb(164, 234, 255);
+    filter:drop-shadow(1px 1px 5px rgb(59, 166, 199));
+    animation-name: cloudMovement;
+    animation-iteration-count: infinite;
+    animation-duration :10s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes cloudMovement{
+    from{margin-left:-55px;}
+    to{margin-left:65px;}
+}
+
+agm-map{
+    height:25rem;
+}
